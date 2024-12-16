@@ -4,12 +4,7 @@ public class Principal {
 	  public static void main(String[] args) {
 		Cliente cliente = new Cliente(26,false,false);
 		AsignarCuenta(cliente);
-		AsignarCuenta(cliente);
-	} catch (IllegalArgumentException e) {
-		System.out.println("Error: " + e.getMessage());
-	} catch (Exception e) {
-		System.out.println("Ha ocurrido un error inesperado: " + e.getMessage());
-	}
+	
 	  }
 
 	  public static void AsignarCuenta(Cliente cliente) {
@@ -44,4 +39,3 @@ public class Principal {
             System.out.println("Error al asignar la cuenta: " + e.getMessage());
         }
     }
-}
