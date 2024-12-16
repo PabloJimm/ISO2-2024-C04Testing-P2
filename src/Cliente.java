@@ -9,6 +9,9 @@ public class Cliente {
 
 	 // Constructor
     public Cliente(int edad, boolean estudiante, boolean desplazado) {
+        if (edad < 0) {
+            throw new IllegalArgumentException("La edad no puede ser negativa.");
+        }
         this.edad = edad;
         this.mayorEdad = edad >= 18;
         this.estudiante = estudiante;
